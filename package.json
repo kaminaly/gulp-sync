@@ -1,0 +1,36 @@
+{
+  "name": "gulp-sync",
+  "version": "0.1.0",
+  "description": "use sync at gulp",
+  "main": "./lib/index.js",
+  "scripts": {
+    "test": "gulp test"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git://github.com/kaminaly/gulp-sync.git"
+  },
+  "keywords": [
+    "gulpfriendly",
+    "gulp",
+    "sync",
+    "async"
+  ],
+  "author": {
+    "name": "kaminaly",
+    "url": "http://github.com/kaminaly"
+  },
+  "license": "MIT",
+  "devDependencies": {
+    "gulp": "*",
+    "gulp-coffee": "*",
+    "gulp-mocha": "*",
+    "coffee-script": "*",
+    "should": "*"
+  },
+  "bugs": {
+    "url": "https://github.com/kaminaly/gulp-sync/issues"
+  },
+  "readmeFilename": "README.md",
+  "homepage": "https://github.com/kaminaly/gulp-sync"
+}
