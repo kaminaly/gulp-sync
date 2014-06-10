@@ -93,7 +93,7 @@ required.
 
 #### name
 
-Type: `String`
+Type: `String`  
 Default: `sync group`
 
 prefix of generated task name
@@ -111,7 +111,7 @@ required.
 
 #### name
 
-Type: `String`
+Type: `String`  
 Default: `sync group`
 
 prefix of generated task name
