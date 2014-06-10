@@ -1,5 +1,4 @@
-# [gulp](http://gulpjs.com)-sync [![Build Status](https://travis-ci.org/kaminaly/gulp-sync.svg?branch=master)](https://travis-ci.org/kaminaly/gulp-sync)
-
+# [gulp](http://gulpjs.com)-sync [![Build Status](https://travis-ci.org/kaminaly/gulp-sync.svg?branch=master)](https://travis-ci.org/kaminaly/gulp-sync) [![NPM version](https://badge.fury.io/js/gulp-sync.svg)](http://badge.fury.io/js/gulp-sync)
 > sync for dependency tasks of gulp.task method
 
 *this is not gulp plugin*
