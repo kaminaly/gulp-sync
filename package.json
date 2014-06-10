@@ -1,7 +1,7 @@
 {
   "name": "gulp-sync",
   "version": "0.1.0",
-  "description": "use sync at gulp",
+  "description": "sync for dependency tasks of gulp.task method",
   "main": "./lib/index.js",
   "scripts": {
     "test": "gulp test"
