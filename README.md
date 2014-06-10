@@ -59,7 +59,7 @@ gulp.task('default', gulpsync.async(['a', 'b', 'c']));
 var gulp = require('gulp');
 var gulpsync = require('gulp-sync')(gulp);
 
-gulp.task('default', gulpsync.sync([
+gulp.task('default', gulpsync.async([
     // async
     'a',
     [
