@@ -17,14 +17,14 @@ $ npm install --save-dev gulp-sync
 ### sync
 ```js
 var gulp = require('gulp');
-var   gulpsync = require('gulp-sync');
+var gulpsync = require('gulp-sync')(gulp);
 
 gulp.task('default', gulpsync.sync(['a', 'b', 'c']));
 ```
 
 ```js
 var gulp = require('gulp');
-var   gulpsync = require('gulp-sync');
+var gulpsync = require('gulp-sync')(gulp);
 
 gulp.task('default', gulpsync.sync([
     // sync
@@ -49,7 +49,7 @@ gulp.task('default', gulpsync.sync([
 ### async
 ```js
 var gulp = require('gulp');
-var   gulpsync = require('gulp-sync');
+var gulpsync = require('gulp-sync')(gulp);
 
 gulp.task('default', gulpsync.async(['a', 'b', 'c']));
 //same gulp.task('default', ['a', 'b', 'c']);
@@ -57,7 +57,7 @@ gulp.task('default', gulpsync.async(['a', 'b', 'c']));
 
 ```js
 var gulp = require('gulp');
-var   gulpsync = require('gulp-sync');
+var gulpsync = require('gulp-sync')(gulp);
 
 gulp.task('default', gulpsync.sync([
     // async
