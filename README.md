@@ -78,6 +78,20 @@ gulp.task('default', gulpsync.async([
 ]));
 ```
 
+### mix and multiple
+
+if you need run multiple, method will required 2nd parameter. that must be unique.
+
+```js
+var gulp = require('gulp');
+var gulpsync = require('gulp-sync')(gulp);
+
+gulp.task('debug', gulpsync.async(['a', ['b', 'c']], 'async debug'));
+gulp.task('release', gulpsync.sync([['c', 'd'], 'e'], 'sync release'));
+gulp.task('test', gulpsync.sync(['debug', 'f', 'g'], 'sync test'));
+
+gulp.task('default', ['debug']);
+```
 
 ## API
 
