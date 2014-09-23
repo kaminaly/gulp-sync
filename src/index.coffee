@@ -21,8 +21,8 @@ module.exports = (gulp)->
                 task = [task]
 
             do (taskName, deps, task)->
-                check = task.concat()
                 gulp.task taskName, deps, (cb)->
+                    check = task.concat()
                     gulp.addListener 'task_stop', onStop = (e)->
                         if -1 != i = check.indexOf e.task
                             check.splice i, 1
