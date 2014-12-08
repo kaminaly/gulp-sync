@@ -80,7 +80,7 @@ gulp.task('default', gulpsync.async([
 
 ### mix and multiple
 
-~~if you need run multiple, method will required 2nd parameter. that must be unique.~~
+~~if you need run multiple, method will required 2nd parameter. that must be unique.~~  
 2nd parameter is no longer required.
 
 ```js
@@ -111,7 +111,7 @@ required.
 Type: `String`  
 Default: `sync group` + `count`
 
-prefix of generated task name
+prefix of generated task name  
 for instance you can use this parameter for checking the validation
 
 
@@ -131,7 +131,7 @@ required.
 Type: `String`  
 Default: `sync group` + `count`
 
-prefix of generated task name
+prefix of generated task name  
 for instance you can use this parameter for checking the validation
 
 
