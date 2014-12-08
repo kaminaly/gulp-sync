@@ -1,6 +1,8 @@
 'use strict'
+groupCount = 0
 module.exports = (gulp)->
     async = (tasks, prefix = 'sync group')->
+        prefix += groupCount++ if prefix == 'sync group'
         result = []
         syncCount = 0
         for task in tasks
@@ -12,6 +14,7 @@ module.exports = (gulp)->
         result
 
     sync = (tasks, prefix = 'sync group')->
+        prefix += groupCount++ if prefix == 'sync group'
         deps = []
         for task, index in tasks
             taskName = prefix + ':' + index

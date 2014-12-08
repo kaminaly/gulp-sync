@@ -80,15 +80,16 @@ gulp.task('default', gulpsync.async([
 
 ### mix and multiple
 
-if you need run multiple, method will required 2nd parameter. that must be unique.
+~~if you need run multiple, method will required 2nd parameter. that must be unique.~~
+2nd parameter is no longer required.
 
 ```js
 var gulp = require('gulp');
 var gulpsync = require('gulp-sync')(gulp);
 
-gulp.task('debug', gulpsync.async(['a', ['b', 'c']], 'async debug'));
-gulp.task('release', gulpsync.sync([['c', 'd'], 'e'], 'sync release'));
-gulp.task('test', gulpsync.sync(['debug', 'f', 'g'], 'sync test'));
+gulp.task('debug', gulpsync.async(['a', ['b', 'c']]));
+gulp.task('release', gulpsync.sync([['c', 'd'], 'e']));
+gulp.task('test', gulpsync.sync(['debug', 'f', 'g']));
 
 gulp.task('default', ['debug']);
 ```
@@ -108,9 +109,11 @@ required.
 #### name
 
 Type: `String`  
-Default: `sync group`
+Default: `sync group` + `count`
 
 prefix of generated task name
+for instance you can use this parameter for checking the validation
+
 
 
 ### async(tasks, name)
@@ -126,9 +129,10 @@ required.
 #### name
 
 Type: `String`  
-Default: `sync group`
+Default: `sync group` + `count`
 
 prefix of generated task name
+for instance you can use this parameter for checking the validation
 
 
 ## License
